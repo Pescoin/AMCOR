@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 export default function MaterialDetail() {
   const {
     state: {
-      material: { title, img1, img2, category, location, rosette, grade },
+      material: { title, img1, img2, grade },
     },
   } = useLocation();
 
