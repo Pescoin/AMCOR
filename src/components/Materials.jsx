@@ -20,9 +20,9 @@ export default function Materials() {
     <>
       <div>
         <div className='flex justify-center items-center mt-6'>
-          <BsSearch className='p-2 bg-white text-black w-16 h-14 outline-none rounded-l-lg' />
+          <BsSearch className='p-2 bg-white text-black w-16 h-14 outline-none rounded-l-lg ' />
           <input
-            className='w-9/12 text-3xl h-14 border-none rounded-r-lg'
+            className='w-9/12 text-xl h-14 border-none rounded-r-lg md:text-3xl'
             value={query}
             type='search'
             onChange={(e) => setQuery(e.target.value)}
@@ -33,13 +33,16 @@ export default function Materials() {
 
       {filteredItems && (
         <div className='mr-4 mt-4 p-4 w-full flex justify-center border-b border-gray-400'>
-          <p className='text-3xl font-semibold'>
+          <p className='font-semibold text-2xl md:text-3xl'>
             {' '}
-            <span className='text-green-300'>
+            <span className='text-green-300 text-2xl md:text-3xl'>
               {'   '}
               Searched : {filteredItems.length}
             </span>
-            <span className='text-gray-400'> &ensp; / &ensp; </span>
+            <span className='text-gray-400 text-2xl md:text-3xl'>
+              {' '}
+              &ensp; / &ensp;{' '}
+            </span>
             Total : {materials.length}{' '}
           </p>
         </div>

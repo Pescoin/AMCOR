@@ -39,10 +39,10 @@ export default function MaterialDetail() {
   return (
     <section>
       <div className='flex px-4 my-2 items-center justify-start'>
-        <p className='text-4xl font-bold sm:text-3xl'>{title}</p>
+        <p className='text-2xl font-bold md:text-4xl'> ▪ {title}</p>
       </div>
-      <div className='px-4 flex text-4xl font-bold gap-2 sm:text-xl'>
-        <p className={selectedColor}>{`검출난이도: ${grade}등급`}</p>
+      <div className='px-4 flex text-2xl font-bold gap-2 md:text-4xl'>
+        <p className={selectedColor}> ▪ {`검출난이도: ${grade}등급`}</p>
       </div>
       <section className='grid grid-cols-1 md:grid-cols-2 gap-4 p-4'>
         <img className='w-full' src={img1.url} alt={title} />

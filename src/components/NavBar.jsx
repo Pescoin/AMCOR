@@ -12,7 +12,10 @@ export default function NavBar() {
   return (
     <section>
       <header className='flex h-20 justify-between border-b border-gray-300 px-5 my-3 '>
-        <Link to='/' className='flex items-center text-5xl text-brand'>
+        <Link
+          to='/'
+          className='flex items-center text-4xl text-brand md:text-5xl'
+        >
           <DiAtom className='font-bold' />
           <h1 className='font-bold'>AMC-OR</h1>
         </Link>
@@ -28,7 +31,7 @@ export default function NavBar() {
           Search
         </Link> */}
           {user && user.isAdmin && (
-            <Link to='/materials/new' className='text-2xl'>
+            <Link to='/materials/new' className='text-2xl hidden md:flex'>
               <BsPencilSquare />
             </Link>
           )}
