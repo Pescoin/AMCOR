@@ -32,9 +32,6 @@ export default function NewMaterial() {
       addNewMaterial(material, arr);
       setIsLoading(false);
       setSuccess('성공적으로 물품이 추가되었습니다.');
-      setTimeout(() => {
-        setSuccess(null);
-      }, 4000);
     } catch {}
     // 제품의 사진을 cloudinary 에 업로드 하고 url 획득
   };
