@@ -51,10 +51,12 @@ export default function MaterialCard({
         </div>
         <div className='my-2 px-2 text-gray-400 font-semibold p-1 '>
           <div className='flex justify-center'>
-            {`종류: ${category}`}&nbsp;/&nbsp;{`부위: ${location}`}
-            &nbsp;/&nbsp;
-            {`로젯: ${rosette}`}&nbsp;/&nbsp;
-            <span className={selectedColor}>{`검출난이도: ${grade}등급`}</span>
+            <span>
+              {`종류: ${category}`}&nbsp;/&nbsp;{`부위: ${location}`}
+              &nbsp;/&nbsp;
+              {`로젯: ${rosette}`}&nbsp;/&nbsp;
+              <span className={selectedColor}>{`난이도: ${grade}등급`}</span>
+            </span>
           </div>
         </div>
       </li>
