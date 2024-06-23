@@ -6,7 +6,7 @@ import { addNewMaterial } from '../api/firebase';
 export default function NewMaterial() {
   const [material, setMaterial] = useState({});
   const [materialImgs, setMaterialImgs] = useState(null);
-  const [links, setLinks] = useState([]);
+  const [links, setLinks] = useState(null);
   const [success, setSuccess] = useState();
   const [isLoading, setIsLoading] = useState(false);
 
