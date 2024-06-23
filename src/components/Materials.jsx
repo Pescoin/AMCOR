@@ -20,7 +20,7 @@ export default function Materials() {
     <>
       <div>
         <div className='flex justify-center items-center mt-6'>
-          <BsSearch className='p-2 bg-white text-black w-16 h-14 outline-none rounded-l-lg h-16' />
+          <BsSearch className='p-2 bg-white text-black w-16 h-14 outline-none rounded-l-lg' />
           <input
             className='w-9/12 text-3xl rounded-r-lg h-14 border-none '
             value={query}
