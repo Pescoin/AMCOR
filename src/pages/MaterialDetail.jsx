@@ -37,17 +37,22 @@ export default function MaterialDetail() {
   const selectedColor = textColor(grade);
 
   return (
-    <section>
-      <div className='flex px-4 my-2 items-center justify-start'>
-        <p className='text-2xl font-bold md:text-4xl'> ▪ {title}</p>
-      </div>
-      <div className='px-4 flex text-2xl font-bold gap-2 md:text-4xl'>
-        <p className={selectedColor}> ▪ {`검출난이도: ${grade}등급`}</p>
-      </div>
-      <section className='grid grid-cols-1 md:grid-cols-2 gap-4 p-4'>
-        <img className='w-full' src={img1.url} alt={title} />
-        <img className='w-full' src={img2.url} alt={title} />
+    <>
+      <section>
+        <div className='flex px-4 my-2 items-center justify-start'>
+          <p className='text-2xl font-bold md:text-4xl'> ▪ {title}</p>
+        </div>
+        <div className='px-4 flex text-2xl font-bold gap-2 md:text-4xl'>
+          <span>
+            {' '}
+            ▪<span className={selectedColor}>{`검출난이도: ${grade}등급`}</span>
+          </span>
+        </div>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-4 p-4'>
+          <img className='w-full' src={img1.url} alt={title} />
+          <img className='w-full' src={img2.url} alt={title} />
+        </div>
       </section>
-    </section>
+    </>
   );
 }
