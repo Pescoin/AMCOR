@@ -22,7 +22,7 @@ export default function Materials() {
         <div className='flex justify-center items-center mt-6'>
           <BsSearch className='p-2 bg-white text-black w-16 h-14 outline-none rounded-l-lg' />
           <input
-            className='w-9/12 text-3xl rounded-r-lg h-14 border-none '
+            className='w-9/12 text-3xl h-14 border-none rounded-r-lg'
             value={query}
             type='search'
             onChange={(e) => setQuery(e.target.value)}
