@@ -38,7 +38,7 @@ export default function MaterialDetail() {
 
   return (
     <>
-      <section>
+      <section className='fixed top-24'>
         <div className='flex px-4 my-2 items-center justify-start'>
           <p className='text-2xl font-bold md:text-4xl'> ▪ {title}</p>
         </div>

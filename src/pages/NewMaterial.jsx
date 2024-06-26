@@ -36,7 +36,7 @@ export default function NewMaterial() {
     // 제품의 사진을 cloudinary 에 업로드 하고 url 획득
   };
   return (
-    <section className='w-full text-center'>
+    <section className='w-full text-center fixed top-24'>
       <h1 className='text-2xl font-bold my-4'>새로운 물품 등록</h1>
       {success && <p className='my-2'>✅ {success}</p>}
       {links &&
