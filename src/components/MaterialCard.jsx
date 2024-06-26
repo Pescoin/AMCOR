@@ -55,8 +55,8 @@ export default function MaterialCard({
               {`종류: ${category}`}&nbsp;/&nbsp;{`부위: ${location}`}
               &nbsp;/&nbsp;
               {`로젯: ${rosette}`}&nbsp;/&nbsp;
-              <span className={selectedColor}>{`난이도: ${grade}등급`}</span>
             </span>
+            <p className={selectedColor}>{`난이도: ${grade}등급`}</p>
           </div>
         </div>
       </li>

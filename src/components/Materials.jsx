@@ -18,7 +18,7 @@ export default function Materials() {
 
   return (
     <>
-      <div>
+      <div className='mt-52'>
         <div className='flex justify-center items-center mt-6 '>
           <BsSearch className='p-2 bg-white text-black w-16 h-14 outline-none rounded-l-lg hidden md:flex ' />
           <input
@@ -52,6 +52,9 @@ export default function Materials() {
       {error && <p>{error}</p>}
       <ul className='grid grid-cols-1 md:grid-cols-3 lg-grid-cols-4 gap-4 p-4'>
         {materials &&
+          filteredItems.sort((a, b) => {
+            return a.grade > b.grade ? 1 : -1;
+          }) &&
           filteredItems.map((material, index) => (
             <MaterialCard key={material.id} material={material} index={index} />
           ))}
