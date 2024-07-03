@@ -1,9 +1,9 @@
 import React from 'react';
 import { HiOutlineHome } from 'react-icons/hi';
-import { Link } from 'react-router-dom';
-import Button from './Button';
 
 export default function Aside() {
+  
+
   const handleClick = (e) => {};
 
   const handleScroll = (e) => {};

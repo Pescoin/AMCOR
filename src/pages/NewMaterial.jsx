@@ -36,7 +36,7 @@ export default function NewMaterial() {
     // 제품의 사진을 cloudinary 에 업로드 하고 url 획득
   };
   return (
-    <section className='w-full text-center fixed top-24'>
+    <section className='w-full text-center mt-32'>
       <h1 className='text-2xl font-bold my-4'>새로운 물품 등록</h1>
       {success && <p className='my-2'>✅ {success}</p>}
       {links &&
@@ -49,7 +49,7 @@ export default function NewMaterial() {
           );
         })}
 
-      <form className='flex flex-col px-12 ' onSubmit={handleSubmit}>
+      <form className='flex flex-col px-12 my-9' onSubmit={handleSubmit}>
         <input
           className='bg-white'
           type='file'

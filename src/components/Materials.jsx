@@ -5,6 +5,14 @@ import MaterialCard from './MaterialCard';
 import { BsSearch } from 'react-icons/bs';
 
 export default function Materials() {
+  const observer = new IntersectionObserver(callback);
+
+  function callback(entries) {
+    entries.array.forEach((entry) => {
+      console.log(entry);
+    });
+  }
+
   const {
     isLoading,
     error,
